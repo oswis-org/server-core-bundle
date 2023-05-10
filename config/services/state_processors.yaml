@@ -1,0 +1,7 @@
+services:
+
+    OswisOrg\ServerCoreBundle\State\AppUser\AppUserProcessor:
+        bind:
+            $decorated: '@api_platform.doctrine.orm.state.processor'
+        arguments: [ '@OswisOrg\ServerCoreBundle\State\AppUser\AppUserProcessor.inner' ]
+        tags: [ 'api_platform.state_processor' ]

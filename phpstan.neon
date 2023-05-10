@@ -1,0 +1,13 @@
+parameters:
+    level: max
+
+    paths:
+        - .
+
+    excludePaths:
+        - vendor/*
+        - var/*
+        - tests/*
+        - node_modules/*
+        - phpinsights.php
+

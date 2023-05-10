@@ -1,0 +1,1 @@
+# Oswis Server - Core bundle

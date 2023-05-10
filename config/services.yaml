@@ -1,0 +1,14 @@
+# oswis-org/server-core-bundle/config/services.yaml
+
+imports:
+    - { resource: 'services/*.yaml', ignore_errors: not_found }
+
+parameters:
+    doctrine_behaviors_blameable_user_entity: OswisOrg\OswisCoreBundle\Entity\AppUser
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
